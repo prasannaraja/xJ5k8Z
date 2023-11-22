@@ -1,0 +1,16 @@
+<h1 class="app-home__title">Trending Games</h1>
+<div class="p-4 sm:ml-64">
+	<div class="rounded-lg border-2 border-dashed border-gray-200 p-4">
+		<div class="container">
+			<div class="thumbnail-grid">
+				<div *ngFor="let game of games" class="thumbnail">
+					<img
+						[src]="game.thumb ? game.thumb.url : 'assets/images/dummy.png'"
+						[alt]="game.thumb ? game.thumb.title : 'No Title'"
+						class="w-full h-24 object-contain"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

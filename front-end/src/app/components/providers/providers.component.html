@@ -1,0 +1,6 @@
+<mat-form-field style="width: 50%;font-weight: lighter;">
+    <mat-label>Providers</mat-label>
+    <mat-select [formControl]="providers" multiple>
+        <mat-option *ngFor="let provider of providerList" [value]="provider">{{provider}}</mat-option>
+    </mat-select>
+</mat-form-field>

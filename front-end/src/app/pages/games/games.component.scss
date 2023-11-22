@@ -1,0 +1,56 @@
+@import "@app/colors";
+@import "@app/mixins";
+
+.app-home {
+	&__title {
+		text-align: center;
+		margin-top: 20px;
+		font-weight: 600;
+	}
+
+	&__json-data-container {
+		background-color: $black;
+		color: $white;
+
+		@include breakpoint("xsmall") {
+			color: $neon-green;
+		}
+	}
+}
+
+.thumbnail-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	gap: 16px;
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+.thumbnail {
+	overflow: hidden;
+}
+
+.thumbnail img {
+	width: 100%;
+	display: block;
+}
+
+.mat-toolbar {
+	background-color: white;
+}
+
+.app-search {
+	padding-right: 10px;
+}
+.spacer {
+	flex: 1 1 auto;
+}
+
+.search-button {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.ml-2 {
+	margin-left: 10px;
+}
